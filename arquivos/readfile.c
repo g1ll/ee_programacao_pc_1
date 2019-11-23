@@ -2,7 +2,7 @@
 #include<stdlib.h>
 int main() {
 
-	FILE *file;	
+	FILE *file;
 	
 	char  filename[100],conteudo[200];
 	
