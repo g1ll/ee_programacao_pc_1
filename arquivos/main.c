@@ -16,4 +16,7 @@ void main() {
 	}else{
 		printf("\nErro ao gravar! %s\n\n",filename);
 	}	
+
+	printf("\n\n\n");
+	getchar();
 }
