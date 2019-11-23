@@ -5,9 +5,10 @@ void main() {
 	FILE *file;	
 	
 	char  filename[10],conteudo[500];
-	
+
+	fgets(conteudo,500,stdin);
 	sprintf(filename,"teste.txt");
-	sprintf(conteudo,"%s","TESTE");
+	//sprintf(conteudo,"%s","TESTE");
 	
 	file = fopen(filename,"w");
 	if(file!=NULL){

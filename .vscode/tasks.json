@@ -5,7 +5,7 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "gcc build active file",
+            "label": "gcc-7 build active file",
             "command": "/usr/bin/gcc",
             "args": [
                 "-g",
