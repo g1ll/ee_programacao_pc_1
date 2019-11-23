@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int main() {
 
 	FILE *file;	
 	
 	char  filename[13],conteudo[200],comando[200];
-	
-	sprintf(filename,"cadastro.txt");
+	system("ls");
+	printf("\nInsira o nome do arquivo:\n");
+	scanf("\n%s",filename);
 	
 	file = fopen(filename,"r");
 	if(file!=NULL){

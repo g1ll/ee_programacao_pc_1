@@ -1,2 +1,2 @@
-Olá Mundo !
+Testando o editor de textos simples!
 
