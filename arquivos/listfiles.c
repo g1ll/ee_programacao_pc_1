@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <dirent.h>
 #include <string.h>
-  
+
 int main(void) 
 {   
     struct dirent *de;  // Pointer for directory entry 
@@ -24,7 +24,7 @@ int main(void)
             &&de->d_name[strlen(de->d_name)-4]=='.')
             //&&strrchr(de->d_name,'.')!=NULL)
                 printf("%s\n", de->d_name);
-    } 
+    }
   
     closedir(dr); 
     printf("\n\n\n");
