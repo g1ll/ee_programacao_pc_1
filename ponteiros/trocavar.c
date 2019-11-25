@@ -8,6 +8,7 @@ int main(void){
 
     a=3;
     b=4;
+    
     printf("a:%d b:%d\n",a,b);
     troca(&a,&b);
     printf("a:%d b:%d\n",a,b);
@@ -17,9 +18,8 @@ int main(void){
 }
 
 void troca(int *x,int *y){
-
     int aux;
     aux = *x;
-    *x = *y;
+    x = *y;
     *y = aux;
 }
