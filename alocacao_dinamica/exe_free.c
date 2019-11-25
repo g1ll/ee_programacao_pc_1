@@ -12,9 +12,9 @@ int leSensor(){
 }
 
 int main(void){
-    int *d,i=0,j,ds=0,di=0;
+    int *d,*nd,i=0,j,ds=0,di=0;
     float media=0;
-
+    
     d = malloc(sizeof(int*));
 
     ligaSensor();
@@ -24,9 +24,14 @@ int main(void){
     printf(" %d ", d[i]);
     
     while(d[i]!=0){
-        d=realloc(d, ++i * sizeof (int*));
-        d[i]=leSensor();
-         printf(" %d ", d[i]);
+        nd=realloc(d, ++i * sizeof (int*));
+        if(nd!=NULL){
+            d = nd;
+            d[i]=leSensor();
+            printf(" %d ", d[i]);
+        }else{
+             printf("\nErro ao alocar memoria!\n");
+        }
     }
 
     printf("\nCalculando media...");
@@ -42,6 +47,11 @@ int main(void){
         ds += (d[j]>media)?1:0;
         if(d[j]<media)di++;
     }
+
+    free(d);
+    d = NULL;
+    free(nd);
+    nd = NULL;
         
     printf("\n\tDados acima da media: %d (%f)",ds,ds*100.0/i);
     printf("\n\tDados abaixo da media: %d (%f)",di,di*100.0/i);
