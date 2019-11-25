@@ -11,7 +11,9 @@ int main()
     printf("b<<1 = %d\n", b<<1);   
 
     // Resultado: 00000001 = 10+29 zeros = 1073741824 
-    printf("1<<30 = 2^30 = %d Bytes ≃ 1GB\n", 1<<30); 
+    printf("1<<30 = 2^30 = %ld Bytes ≃ 1GB\n", 1<<30);
+    // Resultado: 00000010 = 10+30 zeros = 2*1073741824 
+    printf("2<<30 = 2*2^30 = %ld Bytes ≃ 2GB\n", 2<<30); 
 
     printf("\n\n\n");
     getchar();

@@ -32,4 +32,8 @@ int main(int argc, char** argv)
     }
     stop = now();
     printf("malloc+memset+free 1 GiB: %0.2f ms\n", (stop - start) / LOOPS * 1000);
+
+    printf("\n\n\n");
+    getchar();
+
 }
