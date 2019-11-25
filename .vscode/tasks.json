@@ -12,7 +12,8 @@
                 "${file}",
                 "-o", 
                 // "${fileDirname}/${fileBasename}.exe", //windows
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-lm"
             ],
             "options": {
                 "cwd": "/usr/bin"
