@@ -31,6 +31,7 @@ int calcEqSegundoGrau(float a,float b, float c,float *x1,float *x2){
         *x2 = (-b-sqrt(dl))/2*a;
     }else{
         cod = 1;
+        
     }
     
     return cod;
