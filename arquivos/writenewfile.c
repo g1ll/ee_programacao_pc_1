@@ -3,10 +3,10 @@
 int main() {
 
 	FILE *file;	
-	char  filename[21], conteudo[200];
+	char  *filename, *conteudo;
 	
-	printf("\nNome do Arquivo [size<21]:\n");
-	scanf("%[^\n]s ",filename);
+	printf("\nNome do Arquivo:\n");
+	scanf("\n%s ",filename);
 	getchar();
 	file = fopen(filename,"w");
 	
