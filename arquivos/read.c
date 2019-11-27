@@ -6,6 +6,7 @@ int main() {
 	FILE *file;	
 	
 	char  filename[13],conteudo[200],comando[200];
+	printf("Arquivos:\n");
 	system("ls");
 	printf("\nInsira o nome do arquivo:\n");
 	scanf("\n%s",filename);
@@ -17,7 +18,7 @@ int main() {
 		          printf("%s", conteudo);  
 		fclose(file);
 	}else{	
-		printf("\nErro ao gravar! %s\n\n",filename);
+		printf("\nErro ao ler! %s\n\n",filename);
 	}
 	return 0;
 }
