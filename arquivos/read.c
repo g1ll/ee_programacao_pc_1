@@ -4,19 +4,18 @@
 int main() {
 
 	FILE *file;	
-	char  filename[200],conteudo[100];
+	char  filename[100],conteudo[100];
 
 	printf("Arquivos:\n");
 	system("ls");
 	printf("\nInsira o nome do arquivo:\n");
-	scanf("\n%s",filename);
+	scanf("%s",filename);
 	
 	file = fopen(filename,"r");
 	if(file!=NULL){
 		printf("\nArquivo aberto:\n");
-		if( fgets(conteudo, 100, file ) != NULL ) 
+		while(fgets(conteudo, 100, file ) != NULL ) 
 		          printf("%s", conteudo);
-		else perror("Erro ao ler!");  
 		fclose(file);
 	}else{	
 		printf("\nErro ao abrir %s\n\n",filename);

@@ -1,4 +1,0 @@
-
-Dados Cadastrados
-Nome: Olá Mundo!!
-Idade: 999999999

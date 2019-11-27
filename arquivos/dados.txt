@@ -1,4 +1,0 @@
-
-Dados Cadastrados
-Nome: Fulano Testando
-Idade: 99
