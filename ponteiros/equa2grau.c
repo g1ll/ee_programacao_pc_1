@@ -23,15 +23,14 @@ int main(void){
 int calcEqSegundoGrau(float a,float b, float c,float *x1,float *x2){
     
     int cod = 0;
-    float dl=0;
+    float dc=0;
 
-    dl  = b*b -4*a*c;
-    if(dl>0){
-        *x1 = (-b+sqrt(dl))/2*a;
-        *x2 = (-b-sqrt(dl))/2*a;
+    dc  = b*b -4*a*c;
+    if(dc>0){
+        *x1 = (-b+sqrt(dc))/2*a;
+        *x2 = (-b-sqrt(dc))/2*a;
     }else{
-        cod = 1;
-        
+        cod = 1;   
     }
     
     return cod;

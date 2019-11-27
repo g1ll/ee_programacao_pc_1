@@ -8,7 +8,7 @@ int ligaSensor(){
 }
 
 int leSensor(){
-    return rand()%12;
+    return rand()%13;
 }
 
 int main(void){

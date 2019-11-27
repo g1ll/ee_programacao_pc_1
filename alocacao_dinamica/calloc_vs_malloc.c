@@ -17,6 +17,7 @@ float now()
 
 int main(int argc, char** argv)
 {
+    // perror("clock_gettime");
     float start = now();
     for (int i = 0; i < LOOPS; ++i) {
         free(calloc(1, 1 << 30));

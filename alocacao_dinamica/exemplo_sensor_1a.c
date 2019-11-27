@@ -23,7 +23,9 @@ int main(void){
     }while(d[i++]!=0);
 
     printf("\nCalculando media...");
-    printf("\nQtd. Dados: %d \nValores: ",i);for(j=0;j<i;j++)printf(" %d ", d[j]);
+    printf("\nQtd. Dados: %d \nValores: ",i);
+    
+    for(j=0;j<i;j++)printf(" %d ", d[j]);
     for(j=0;j<i;j++)media+=d[j];
     media/= i;
     printf("\n\tmedia: %f",media);
